@@ -1,3 +1,13 @@
+bq --location=US mk \
+--dataset \
+--description 'Data loaded from Kaggle (https://www.kaggle.com/amark720/retail-shop-case-study-dataset#)' \
+agosto-sandbox-jaredburns:next2020
+
+bq --location=US mk \
+--dataset \
+--description 'Data transformed from Kaggle (https://www.kaggle.com/amark720/retail-shop-case-study-dataset#)' \
+agosto-sandbox-jaredburns:next2020_transformed
+
 bq --location=US load \
 --replace \
 --source_format=CSV \
